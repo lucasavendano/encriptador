@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto de Lucas</title>
+    <link rel="stylesheet" href="./styles/styles.css"
+</head>
+<body>
+    <header class="encabezado">
+        <img class="encabezado__logo" src="./assets/llave.png">
+    </header>
+    <main class="cuerpo">
+        <h1 class="cuerpo__titulo">
+            ¡Lucas encripta!
+        </h1>
+        <section class="cuerpo__contenido">
+            <section class="cuerpo__izquierda">
+                <textarea class="cuerpo__izquierda__input" id="textoParaEncriptar" placeholder="Ingresa el texto aquí"></textarea>
+                <p class="cuerpo__izquierda__restricciones"><img src="./assets/bi_exclamation-circle-fill.png">Solo letras minúsculas y sin acentos</p>
+                <div class="cuerpo__izquierda__botones">
+                    <button class="cuerpo__botones" onclick="encriptarTexto();" id="encriptar">Encriptar</button>
+                    <button class="cuerpo__botones" onclick="desencriptarTexto();" id="dencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="cuerpo__derecha">
+                <p class="cuerpo__derecha__resultado">Ningun mensaje fue encontrado</p>
+                <p class="cuerpo__derecha__indicaciones">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="cuerpo__derecha__boton">
+                    <button class="cuerpo__botones" onclick="copiarTexto();" id="copiar">Copiar</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="pie">
+        <p>Desarrollado por Lucas F. Avendaño | Argentina | 2024</p>
+    </footer>
+</body>
+</html>

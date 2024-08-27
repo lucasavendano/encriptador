@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+
+:root {
+    --color-principal: #000000;
+    --color-secundario: #149414;
+    --color-terciario: #272727;
+    --color-hover: #2b5329;
+
+    --fuente-principal: "Kode Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.encabezado {
+    padding: 2% 0% 0% 15%;
+    height: 10%;
+    display: flex;
+}
+
+.encabezado__logo {
+    gap: 80px;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 15%;
+}
+
+.cuerpo__titulo {
+    font-family: var(--fuente-principal);
+    font-size: 2.25rem;
+    gap: 20px;
+}
+
+.cuerpo__contenido {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.cuerpo__izquierda {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.cuerpo__izquierda__input {
+    background-color: var(--color-principal);
+    border: 0;
+    outline: none;
+    height: 29rem;
+    color: var(--color-secundario);
+    resize: none;
+    padding: 10px 0px 10px 0px;
+}
+
+.cuerpo__izquierda__restricciones {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    gap: 5px;
+}
+
+.cuerpo__izquierda__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cuerpo__derecha {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-terciario);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cuerpo__derecha__resultado {
+    height: 28rem;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.cuerpo__derecha__indicaciones {
+    font-size: 0.8rem;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cuerpo__botones {
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    border-color: var(--color-secundario);
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+}
+
+.cuerpo__botones:hover {
+    cursor: pointer;
+    background-color: var(--color-hover);
+}
+
+.pie {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding: 5% 0% 0% 5%;
+    }
+
+    .encabezado__logo {
+        gap: 10px;
+    }
+
+    .cuerpo {
+        padding: 5%;
+    }
+
+    .cuerpo__contenido {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cuerpo__izquierda {
+        width: 100%;
+    }
+    
+    .cuerpo__izquierda__input {
+        width: auto;
+        height: 34rem;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cuerpo__derecha {
+        width: 90%;
+        height: 5%;
+    }
+    
+    .cuerpo__derecha__resultado {
+        width: auto;
+        height: 20%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cuerpo__botones {
+        width: 332px;
+        padding: 15px;
+    }
+
+    .pie {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .encabezado {
+        padding: 5% 0% 0% 5%;
+    }
+
+    .encabezado__logo {
+        gap: 10px;
+    }
+
+    .cuerpo {
+        padding: 5%;
+    }
+
+    .cuerpo__contenido {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cuerpo__izquierda {
+        width: 100%;
+    }
+    
+    .cuerpo__izquierda__input {
+        width: auto;
+        height: 14rem;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cuerpo__izquierda__botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cuerpo__derecha {
+        width: 100%;
+        height: 5%;
+    }
+    
+    .cuerpo__derecha__resultado {
+        width: auto;
+        height: 20%;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .cuerpo__botones {
+        width: 332px;
+        padding: 15px;
+    }
+
+    .pie {
+        padding: 20px;
+        font-size: 0.6rem;
+    }
+}
