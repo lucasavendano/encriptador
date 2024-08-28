@@ -51,6 +51,5 @@ function desencriptarTexto() {
 }
 
 function copiarTexto() {
-    console.log(textoEncriptado);
     navigator.clipboard.writeText(textoEncriptado);
 }
